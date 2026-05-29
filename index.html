@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-breadcrumb" id="nav-breadcrumb">01. HOME</span>
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active" data-section="home">HOME</a>
+        <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+        <a href="#portfolio" class="nav-link" data-section="portfolio">PORTFOLIO</a>
+        <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+      </nav>
+      <div class="nav-email">
+        <span class="available-label">AVAILABLE FOR PROJECTS</span>
+        <a href="mailto:jenmaeilao@gmail.com" class="email-link">jenmaeilao@gmail.com</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HOME ========== -->
+  <section id="home" class="section section-home">
+    <div class="home-content">
+      <div class="home-text">
+        <h1 class="hero-name">JEN MAE ILAO</h1>
+        <div class="home-intro">
+          <div class="intro-photo">
+            <div class="photo-placeholder">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="intro-body">
+            <p class="greeting">Hi, I'm Jen!</p>
+            <p class="intro-desc">Welcome to my personal portfolio. Here, you can explore my projects, skills, and
+              experiments as I continue learning full-stack web development and IT. I enjoy creating simple and
+              functional designs while discovering new ways to solve problems through coding.</p>
+            <a href="#" class="btn-primary">View Resume (soon!)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section">
+        <h2 class="section-label">SKILLS &amp; EXPERTISE</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#fff3ee"><i class="fa-solid fa-code" style="color:#e8572a"></i>
+            </div>
+            <p class="skill-name">Development</p>
+            <p class="skill-tags">HTML, CSS, JS, Python, C++</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#eef6ff"><i class="fa-solid fa-pen-nib" style="color:#2a7ae8"></i>
+            </div>
+            <p class="skill-name">UI/UX Design</p>
+            <p class="skill-tags">Figma, Canva, Blender</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#f0fff4"><i class="fa-solid fa-network-wired"
+                style="color:#2e9e5b"></i></div>
+            <p class="skill-name">Networking</p>
+            <p class="skill-tags">Troubleshoot, Configure, Setup</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#fff8ee"><i class="fa-solid fa-people-group"
+                style="color:#e8a52a"></i></div>
+            <p class="skill-name">Collaboration</p>
+            <p class="skill-tags">Team Player</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section section-about">
+    <div class="about-content">
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="#" alt="Profile Photo" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="photo-fallback"><i class="fa-solid fa-user"></i></div>
+        </div>
+      </div>
+      <div class="about-body">
+        <h2 class="about-heading">About Me</h2>
+        <p> I’m a 2nd year BSIT student currently exploring web development, software engineering, and UI/UX design. I
+          enjoy learning how systems work both on the frontend and backend, and I’m continuously improving my skills
+          through projects and practice. </p>
+        <p> I’ve worked with HTML, CSS, JavaScript, PHP, MySQL, Python, and C++, and I also have experience with
+          networking concepts using Cisco Packet Tracer. I’m still building my confidence in development, especially in
+          JavaScript, but I’m actively learning and applying what I study. </p>
+        <p> Right now, I’m focused on building real-world projects like travel booking systems and web applications,
+          while also exploring where I want to specialize in the future. </p>
+      </div>
+    </div>
+    </div>
+
+    <div class="about-details">
+      <div class="about-col">
+        <h3 class="col-heading orange">EDUCATION</h3>
+        <div class="edu-item">
+          <span class="edu-year">2024 – Present</span>
+          <p class="edu-title">BS Information Technology</p>
+          <p class="edu-sub">Polytechnic University of the Philippines - Sto. Tomas</p>
+        </div>
+        <div class="edu-item">
+          <p class="edu-title">Senior High School – STEM</p>
+          <p class="edu-sub">Sto. Tomas Senior High School</p>
+          <p class="edu-sub">With High Honors • STEM VP Member</p>
+        </div>
+      </div>
+      <div class="about-col">
+        <h3 class="col-heading teal">ACADEMIC PROJECTS</h3>
+        <div class="project-item">
+          <p class="project-title">Portfolio Website</p>
+          <p class="project-sub">Personal portfolio designed with Figma</p>
+        </div>
+        <div class="project-item">
+          <p class="project-title">E-Commerce Website (Mobile and Desktop)</p>
+          <p class="project-sub">Responsive fashion e-commerce website with HTML, CSS, JS, and MySQL backend</p>
+        </div>
+        <div class="project-item">
+          <p class="project-title">E-Connect 4 Game</p>
+          <p class="project-sub">Python-based Connect 4 game with unique twist for interactive gameplay</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="achievements">
+      <h3 class="col-heading orange">ACHIEVEMENTS &amp; CERTIFICATIONS</h3>
+      <div class="ach-grid">
+
+        <div class="ach-card">
+          <p class="ach-title">Currently Building My Portfolio</p>
+          <p class="ach-sub">No certifications yet — actively learning and working on projects</p>
+        </div>
+
+        <div class="ach-card">
+          <p class="ach-title">Open for Opportunities</p>
+          <p class="ach-sub">Hackathons, certifications, and academic awards coming soon</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section id="portfolio" class="section section-portfolio">
+    <div class="portfolio-header">
+      <h2 class="portfolio-title">Selected Works</h2>
+      <p class="portfolio-desc">
+        A collection of projects I’ve built and am currently developing as a BSIT student exploring web development,
+        systems, and software fundamentals.
+      </p>
+    </div>
+
+    <div class="works-grid">
+
+      <!-- LakbayLokal -->
+      <div class="work-card">
+        <div class="work-badge web-design">Web App</div>
+        <div class="work-thumb"></div>
+        <div class="work-info">
+          <p class="work-title">LakbayLokal</p>
+          <p class="work-desc">
+            A travel booking system that combines hotel reservations with personalized itinerary planning for users.
+          </p>
+          <div class="work-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP/MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Byahe -->
+      <div class="work-card">
+        <div class="work-badge web-design">Web App</div>
+        <div class="work-thumb"></div>
+        <div class="work-info">
+          <p class="work-title">Byahe</p>
+          <p class="work-desc">
+            A website for renting places for specific events, allowing users to browse and book venues easily.
+          </p>
+          <div class="work-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP/MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yawnzzn Fashion -->
+      <div class="work-card">
+        <div class="work-badge python">Web + Python</div>
+        <div class="work-thumb"></div>
+        <div class="work-info">
+          <p class="work-title">Yawnzzn Fashion Website</p>
+          <p class="work-desc">
+            A fashion-themed website with Python integration, focused on combining design and backend functionality.
+          </p>
+          <div class="work-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="portfolio-cta">
+      <a href="https://github.com/JENMAEILAO" class="btn-primary">
+        View More on GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section section-contact">
+    <div class="contact-header">
+      <h2 class="contact-title">Let’s Work Together</h2>
+      <p class="contact-desc">
+        I’m currently a BSIT student exploring web development, UI/UX, and software engineering. I’m open to
+        collaborations, projects, internships, and learning opportunities where I can grow and contribute.
+      </p>
+    </div>
+    <div class="contact-info">
+      <div class="info-card">
+        <div class="info-icon" style="background:#fff3ee"><i class="fa-solid fa-envelope" style="color:#e8572a"></i>
+        </div>
+        <p class="info-label">Email</p>
+        <p class="info-value">jenmaeilao@gmail.com</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon" style="background:#f0fff4"><i class="fa-solid fa-location-dot" style="color:#2e9e5b"></i>
+        </div>
+        <p class="info-label">Location</p>
+        <p class="info-value">Batangas, Philippines</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon socials-icon">
+          <i class="fa-brands fa-facebook" style="color:#e8a52a"></i>
+          <i class="fa-brands fa-instagram" style="color:#e8572a"></i>
+        </div>
+        <p class="info-label">Follow Me</p>
+        <p class="info-value">Let's connect</p>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <h3 class="form-heading">Send Me a Message</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" placeholder="Jen Mae Ilao" required />
+        </div>
+        <div class="form-group">
+          <label>Your Email *</label>
+          <input type="email" placeholder="jenmaeilao@gmail.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Subject *</label>
+        <input type="text" placeholder="Project Inquiry" />
+      </div>
+      <div class="form-group">
+        <label>Message *</label>
+        <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      <button type="submit" class="btn-send">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
+      </button>
+      <p class="form-success" id="formSuccess">Message sent! I'll get back to you soon.</p>
+    </form>
+  </section>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
