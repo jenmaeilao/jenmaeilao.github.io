@@ -71,14 +71,37 @@ const revealObserver = new IntersectionObserver(
 revealEls.forEach(el => revealObserver.observe(el));
 
 // ---- Contact Form ----
+(function() {
+    emailjs.init("B5u5n_RRcwPP-pvWw"); // 
+    console.log("✓ EmailJS initialized successfully");
+})();
+
+// ---- Contact Form ----
 const contactForm  = document.getElementById('contactForm');
 const formSuccess  = document.getElementById('formSuccess');
 
 if (contactForm) {
   contactForm.addEventListener('submit', e => {
-    e.preventDefault();
-    formSuccess.classList.add('show');
-    contactForm.reset();
-    setTimeout(() => formSuccess.classList.remove('show'), 4000);
+    e.preventDefault(); 
+    console.log("Form submitted");
+
+    if (typeof emailjs === 'undefined') {
+      alert("Error: Hindi pa naglo-load ang EmailJS library sa HTML mo. Check your script tags!");
+      console.error("EmailJS library not loaded");
+      return;
+    }
+
+    console.log("Sending email with Service ID: service_g4btl0k, Template ID: template_zmghm4m");
+    
+    emailjs.sendForm('service_g4btl0k', 'template_zmghm4m', contactForm)
+      .then(() => {
+        console.log("✓ Email sent successfully!");
+        formSuccess.classList.add('show');
+        contactForm.reset();
+        setTimeout(() => formSuccess.classList.remove('show'), 4000);
+      }, (error) => {
+        alert("EmailJS Error: " + JSON.stringify(error));
+        console.error('Email sending failed:', error);
+      });
   });
 }
