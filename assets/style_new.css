@@ -26,79 +26,6 @@ body {
   background: var(--bg);
   overflow-x: hidden;
 }
-
-/* =========== NAVBAR =========== */
-/* .navbar {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  height: var(--nav-h);
-  background: rgba(255,255,255,0.96);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  z-index: 1000;
-  transition: box-shadow .3s;
-}
-.navbar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
-
-.nav-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 24px;
-  gap: 16px;
-}
-
-.nav-breadcrumb {
-  font-size: 11px;
-  letter-spacing: 2px;
-  color: var(--light-text);
-  min-width: 90px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 28px;
-}
-
-.nav-link {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: var(--light-text);
-  text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 2px solid transparent;
-  transition: color .2s, border-color .2s;
-}
-.nav-link:hover,
-.nav-link.active {
-  color: var(--orange);
-  border-bottom-color: var(--orange);
-}
-
-.nav-email {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  min-width: 130px;
-}
-.available-label {
-  font-size: 9px;
-  letter-spacing: 1.2px;
-  color: var(--light-text);
-  text-transform: uppercase;
-}
-.email-link {
-  font-size: 11px;
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-}
-.email-link:hover { color: var(--orange); } */
-
 /* Base Navbar State (Default sa Taas) */
 #navbar {
   top: 0;
@@ -120,7 +47,7 @@ body {
   margin: 0 auto;                /* Sinesentre sa screen horizontally */
   padding: 10px 24px;            /* Mas masikip na padding para compact look */
   border-radius: 50px;           /* Eto ang nagbibigay ng Capsule/Pill shape */
-  background-color: rgba(255, 255, 255, 0.8) !important; /* Semi-transparent background */
+  background-color: rgba(255, 255, 255, 0.90) !important; /* Semi-transparent background */
   backdrop-filter: blur(12px);    /* Glassmorphic effect */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Anino para lumutang sa content */
   border: 1px solid rgba(255, 255, 255, 0.4);

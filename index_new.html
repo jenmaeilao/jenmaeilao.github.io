@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style_new.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ========== MORPHING NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+    <div class="container-lg navbar-capsule-inner">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="assets/img/logo.svg" alt="Logo" height="30" class="d-inline-block align-text-top me-2 logo-img">
+        <span class="nav-breadcrumb d-none d-sm-inline" id="nav-breadcrumb">01. HOME</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a href="#home" class="nav-link active" data-section="home">HOME</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" data-section="about">ABOUT</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link" data-section="portfolio">PORTFOLIO</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-email d-none d-lg-flex flex-column align-items-end">
+        <span class="available-label">AVAILABLE FOR PROJECTS</span>
+        <a href="mailto:jenmaeilao@gmail.com" class="email-link">jenmaeilao@gmail.com</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HOME ========== -->
+  <section id="home" class="section section-home py-8">
+    <div class="container-lg">
+      <div class="row mb-8">
+        <div class="col-lg-8">
+          <h1 class="hero-name display-3 fw-bold mb-4">JEN MAE ILAO</h1>
+          <div class="row align-items-center">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="intro-photo">
+                <div class="photo-placeholder text-center">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <p class="greeting fs-5 mb-3">Hi, I'm Jen!</p>
+              <p class="intro-desc text-secondary">Welcome to my personal portfolio. Here, you can explore my projects,
+                skills, and experiments as I continue learning full-stack web development and IT. I enjoy creating
+                simple and functional designs while discovering new ways to solve problems through coding.</p>
+              <a href="#" class="btn btn-primary">View Resume (soon!)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section">
+        <h2 class="section-label fs-5 fw-bold text-secondary mb-4">SKILLS &amp; EXPERTISE</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card skill-card h-100 border-0">
+              <div class="card-body text-center">
+                <div class="skill-icon mb-3"
+                  style="background:#fff3ee; width:60px; height:60px; margin:0 auto; border-radius:12px; display:flex; align-items:center; justify-content:center;">
+                  <i class="fa-solid fa-code fa-xl" style="color:#e8572a"></i>
+                </div>
+                <p class="skill-name fw-bold mb-2">Development</p>
+                <p class="skill-tags text-secondary small">HTML, CSS, JS, Python, C++</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card skill-card h-100 border-0">
+              <div class="card-body text-center">
+                <div class="skill-icon mb-3"
+                  style="background:#eef6ff; width:60px; height:60px; margin:0 auto; border-radius:12px; display:flex; align-items:center; justify-content:center;">
+                  <i class="fa-solid fa-pen-nib fa-xl" style="color:#2a7ae8"></i>
+                </div>
+                <p class="skill-name fw-bold mb-2">UI/UX Design</p>
+                <p class="skill-tags text-secondary small">Figma, Canva, Blender</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card skill-card h-100 border-0">
+              <div class="card-body text-center">
+                <div class="skill-icon mb-3"
+                  style="background:#f0fff4; width:60px; height:60px; margin:0 auto; border-radius:12px; display:flex; align-items:center; justify-content:center;">
+                  <i class="fa-solid fa-network-wired fa-xl" style="color:#2e9e5b"></i>
+                </div>
+                <p class="skill-name fw-bold mb-2">Networking</p>
+                <p class="skill-tags text-secondary small">Troubleshoot, Configure, Setup</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card skill-card h-100 border-0">
+              <div class="card-body text-center">
+                <div class="skill-icon mb-3"
+                  style="background:#fff8ee; width:60px; height:60px; margin:0 auto; border-radius:12px; display:flex; align-items:center; justify-content:center;">
+                  <i class="fa-solid fa-people-group fa-xl" style="color:#e8a52a"></i>
+                </div>
+                <p class="skill-name fw-bold mb-2">Collaboration</p>
+                <p class="skill-tags text-secondary small">Team Player</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section section-about py-5 bg-light">
+    <div class="container-lg">
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="about-photo">
+            <div class="photo-frame">
+              <img src="#" alt="Profile Photo" class="rounded-3" onerror="this.parentElement.classList.add('no-img')" />
+              <div class="photo-fallback text-center text-secondary">
+                <i class="fa-solid fa-user fa-5x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <h2 class="about-heading display-5 fw-bold mb-4">About Me</h2>
+          <p class="text-secondary mb-3">I'm a 2nd year BSIT student currently exploring web development, software
+            engineering, and UI/UX design. I enjoy learning how systems work both on the frontend and backend, and I'm
+            continuously improving my skills through projects and practice.</p>
+          <p class="text-secondary mb-3">I've worked with HTML, CSS, JavaScript, PHP, MySQL, Python, and C++, and I also
+            have experience with networking concepts using Cisco Packet Tracer. I'm still building my confidence in
+            development, especially in JavaScript, but I'm actively learning and applying what I study.</p>
+          <p class="text-secondary">Right now, I'm focused on building real-world projects like travel booking systems
+            and web applications, while also exploring where I want to specialize in the future.</p>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-6">
+          <h3 class="col-heading fw-bold mb-4"><span class="orange">EDUCATION</span></h3>
+          <div class="edu-item mb-4">
+            <span class="edu-year badge bg-warning text-dark">2024 – Present</span>
+            <p class="edu-title fw-bold mt-3 mb-1">BS Information Technology</p>
+            <p class="edu-sub text-secondary small">Polytechnic University of the Philippines - Sto. Tomas</p>
+          </div>
+          <div class="edu-item">
+            <p class="edu-title fw-bold mb-1">Senior High School – STEM</p>
+            <p class="edu-sub text-secondary small">Sto. Tomas Senior High School</p>
+            <p class="edu-sub text-secondary small">With High Honors • STEM UP Member</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="col-heading fw-bold mb-4"><span class="teal">ACADEMIC PROJECTS</span></h3>
+          <div class="project-item mb-3 p-3 border-start border-primary">
+            <p class="project-title fw-bold mb-1">Portfolio Website</p>
+            <p class="project-sub text-secondary small">Personal portfolio designed with Figma</p>
+          </div>
+          <div class="project-item mb-3 p-3 border-start border-primary">
+            <p class="project-title fw-bold mb-1">E-Commerce Website (Mobile and Desktop)</p>
+            <p class="project-sub text-secondary small">Responsive fashion e-commerce website with HTML, CSS, JS, and
+              MySQL backend</p>
+          </div>
+          <div class="project-item p-3 border-start border-primary">
+            <p class="project-title fw-bold mb-1">E-Connect 4 Game</p>
+            <p class="project-sub text-secondary small">Python-based Connect 4 game with unique twist for interactive
+              gameplay</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievements">
+        <h3 class="col-heading fw-bold mb-4"><span class="orange">ACHIEVEMENTS &amp; CERTIFICATIONS</span></h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card ach-card h-100 border-0 bg-white">
+              <div class="card-body">
+                <p class="ach-title fw-bold mb-2">Currently Building My Portfolio</p>
+                <p class="ach-sub text-secondary small">No certifications yet — actively learning and working on
+                  projects</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card ach-card h-100 border-0 bg-white">
+              <div class="card-body">
+                <p class="ach-title fw-bold mb-2">Open for Opportunities</p>
+                <p class="ach-sub text-secondary small">Hackathons, certifications, and academic awards coming soon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section id="portfolio" class="section section-portfolio py-5">
+    <div class="container-lg">
+      <div class="mb-5">
+        <h2 class="portfolio-title display-5 fw-bold mb-3">Selected Works</h2>
+        <p class="portfolio-desc text-secondary">
+          A collection of projects I've built and am currently developing as a BSIT student exploring web development,
+          systems, and software fundamentals.
+        </p>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <!-- LakbayLokal -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card work-card h-100 border-0 shadow-sm">
+            <div class="work-badge web-design badge bg-primary position-absolute" style="top:10px; right:10px;">Web App
+            </div>
+            <div class="work-thumb" style="height:200px; background:#f0f0f0;"></div>
+            <div class="card-body work-info">
+              <p class="work-title fw-bold mb-2">LakbayLokal</p>
+              <p class="work-desc text-secondary small mb-3">
+                A travel booking system that combines hotel reservations with personalized itinerary planning for users.
+              </p>
+              <div class="work-tags">
+                <span class="badge bg-light text-dark me-2">HTML</span>
+                <span class="badge bg-light text-dark me-2">CSS</span>
+                <span class="badge bg-light text-dark me-2">JavaScript</span>
+                <span class="badge bg-light text-dark">PHP/MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Byahe -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card work-card h-100 border-0 shadow-sm">
+            <div class="work-badge web-design badge bg-primary position-absolute" style="top:10px; right:10px;">Web App
+            </div>
+            <div class="work-thumb" style="height:200px; background:#f0f0f0;"></div>
+            <div class="card-body work-info">
+              <p class="work-title fw-bold mb-2">Byahe</p>
+              <p class="work-desc text-secondary small mb-3">
+                A website for renting places for specific events, allowing users to browse and book venues easily.
+              </p>
+              <div class="work-tags">
+                <span class="badge bg-light text-dark me-2">HTML</span>
+                <span class="badge bg-light text-dark me-2">CSS</span>
+                <span class="badge bg-light text-dark me-2">JavaScript</span>
+                <span class="badge bg-light text-dark">PHP/MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yawnzzn Fashion -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card work-card h-100 border-0 shadow-sm">
+            <div class="work-badge python badge bg-info position-absolute" style="top:10px; right:10px;">Web + Python
+            </div>
+            <div class="work-thumb" style="height:200px; background:#f0f0f0;"></div>
+            <div class="card-body work-info">
+              <p class="work-title fw-bold mb-2">Yawnzzn Fashion Website</p>
+              <p class="work-desc text-secondary small mb-3">
+                A fashion-themed website with Python integration, focused on combining design and backend functionality.
+              </p>
+              <div class="work-tags">
+                <span class="badge bg-light text-dark me-2">HTML</span>
+                <span class="badge bg-light text-dark me-2">CSS</span>
+                <span class="badge bg-light text-dark">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="https://github.com/JENMAEILAO" class="btn btn-primary">
+          View More on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section section-contact py-5">
+    <div class="container-lg">
+      <div class="contact-header mb-5 text-center">
+        <h2 class="contact-title display-5 fw-bold mb-3">Let's Work Together</h2>
+        <p class="contact-desc text-secondary">
+          I'm currently a BSIT student exploring web development, UI/UX, and software engineering. I'm open to
+          collaborations, projects, internships, and learning opportunities where I can grow and contribute.
+        </p>
+      </div>
+
+      <div class="contact-info row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card info-card h-100 border-0 text-center">
+            <div class="card-body">
+              <div class="info-icon mb-3"
+                style="background:#fff3ee; width:60px; height:60px; margin:0 auto; border-radius:12px; display:flex; align-items:center; justify-content:center;">
+                <i class="fa-solid fa-envelope fa-xl" style="color:#e8572a"></i>
+              </div>
+              <p class="info-label fw-bold">Email</p>
+              <p class="info-value text-secondary">jenmaeilao@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card info-card h-100 border-0 text-center">
+            <div class="card-body">
+              <div class="info-icon mb-3"
+                style="background:#f0fff4; width:60px; height:60px; margin:0 auto; border-radius:12px; display:flex; align-items:center; justify-content:center;">
+                <i class="fa-solid fa-location-dot fa-xl" style="color:#2e9e5b"></i>
+              </div>
+              <p class="info-label fw-bold">Location</p>
+              <p class="info-value text-secondary">Batangas, Philippines</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card info-card h-100 border-0 text-center">
+            <div class="card-body">
+              <div class="info-icon mb-3">
+                <i class="fa-brands fa-facebook fa-xl me-2" style="color:#e8a52a"></i>
+                <i class="fa-brands fa-instagram fa-xl" style="color:#e8572a"></i>
+              </div>
+              <p class="info-label fw-bold">Follow Me</p>
+              <p class="info-value text-secondary">Let's connect</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form class="contact-form" id="contactForm">
+            <h3 class="form-heading fw-bold mb-4">Send Me a Message</h3>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-label">Your Name *</label>
+                  <input type="text" class="form-control" name="user_name" placeholder="Juan Dela Cruz" required />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-label">Your Email *</label>
+                  <input type="email" class="form-control" name="user_email" placeholder="juandelacruz@gmail.com"
+                    required />
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Subject *</label>
+              <input type="text" class="form-control" name="subject" placeholder="Project Inquiry" />
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Message *</label>
+              <textarea class="form-control" name="message" rows="5" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 btn-send">
+              <i class="fa-solid fa-paper-plane me-2"></i> Send Message
+            </button>
+            <p class="form-success alert alert-success mt-3" id="formSuccess" style="display:none;">Message sent! I'll
+              get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/emailjs.min.js"></script>
+
+  <script src="assets/script_new.js"></script>
+</body>
+
+</html>
