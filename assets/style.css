@@ -53,14 +53,20 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
 
 /* =========== SECTIONS =========== */
 .section {
-  min-height: 100vh;
+  min-height: auto !important;
   padding: calc(var(--nav-h) + 60px) 24px 80px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
+.section-home {
+  min-height: 100vh; 
+  display: flex;
+  align-items: center; 
+}
+
 /* =========== HOME =========== */
-.section-home { display: flex; flex-direction: column; justify-content: center; }
+/* .section-home { display: flex; flex-direction: column; justify-content: center; } */
 .hero-name {
   font-family: var(--font-head);
   font-size: clamp(48px, 8vw, 90px);
@@ -76,6 +82,14 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 12px 24px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
   position: relative; transform: rotate(-3deg); transition: transform .3s ease;
+}
+
+.intro-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center; 
+  border-radius: 2px; 
 }
 .intro-photo:hover { transform: rotate(-3deg) translateY(-4px); }
 .intro-photo i { font-size: 64px; color: rgba(199, 222, 92, 0.3); }
@@ -176,6 +190,10 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   transform: rotate(-1deg); z-index: -2;
 }
 .work-card:hover { transform: rotate(-2deg) translateY(-8px); box-shadow: 0 8px 24px rgba(199, 222, 92, 0.15), 4px 10px 28px rgba(0,0,0,0.12); }
+.work-card:nth-child(1) { transform: rotate(-2deg); }
+.work-card:nth-child(1)::before { transform: rotate(1.5deg); }
+.work-card:nth-child(1)::after  { transform: rotate(-1deg); }
+.work-card:nth-child(1):hover   { transform: rotate(-2deg) translateY(-8px); }
 .work-card:nth-child(2) { transform: rotate(1.5deg); }
 .work-card:nth-child(2)::before { transform: rotate(-1deg); }
 .work-card:nth-child(2)::after  { transform: rotate(0.5deg); }
@@ -342,85 +360,122 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
 .modal-link.demo   { background: var(--lime); color: var(--dark); }
 .modal-link.demo:hover { background: #b5d34a; transform: translateY(-2px); }
 
-/* =========== FORMAL CONTACT SECTION (BOOTSTRAP VER) =========== */
+/* =========== FORMAL CONTACT SECTION =========== */
 .section-contact {
-  border-top: 1px solid var(--border);
-  background-color: transparent;
+    border-top: 1px solid var(--border);
+    background-color: transparent;
 }
 
 .section-contact .contact-title {
-  font-family: var(--font-head);
-  color: var(--dark);
-  letter-spacing: -0.5px;
+    font-family: var(--font-head);
+    color: var(--dark);
+    letter-spacing: -0.5px;
 }
 
 .section-contact .contact-desc {
-  font-family: var(--font-body);
-  font-size: 14.5px;
-  line-height: 1.7;
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    line-height: 1.7;
 }
 
+/* Link reset para sa Email Card Wrapper */
+.contact-card-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+    height: 100%;
+}
+
+/* Base style para sa LAHAT ng Cards */
 .section-contact .info-card.card {
-  background-color: var(--bg-soft, #f9f9fb) !important; 
-  border: 1px solid var(--border) !important; 
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    background-color: var(--bg-soft, #f9f9fb) !important;
+    border: 1px solid var(--border, #e2e8f0) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02) !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.section-contact a.text-decoration-none:hover .info-card.card {
-  border-color: var(--dark) !important;
-  background-color: #ffffff !important;
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04) !important;
+/* UNIFORM HOVER: Lahat ng card iilaw ng Lime (#c7de5c) at aangat */
+.section-contact .info-card.card:hover,
+.contact-card-link:hover .info-card.card {
+    border-color: #c7de5c !important;
+    background-color: #ffffff !important;
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(199, 222, 92, 0.25) !important; /* Eleganteng lime glow */
 }
 
-.section-contact a.text-decoration-none:hover .info-icon {
-  transform: scale(1.05);
-}
-
+/* Icon Containers Mechanics */
 .section-contact .info-icon {
-  transition: transform 0.3s ease;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
+/* Mag-micro scale ang icon kapag hinover ang card */
+.section-contact .info-card.card:hover .info-icon,
+.contact-card-link:hover .info-icon {
+    transform: scale(1.08);
+}
+
+/* Individual Icon Branding Colors */
+.section-contact .icon-email { background: #fff3ee; }
+.section-contact .icon-email i { color: #e8572a; }
+
+.section-contact .icon-location { background: #f0fff4; }
+.section-contact .icon-location i { color: #2e9e5b; }
+
+.section-contact .icon-socials { width: auto; }
+.section-contact .icon-socials a { text-decoration: none; color: inherit; transition: transform 0.2s ease; }
+.section-contact .icon-socials a:hover { transform: scale(1.2); }
+.section-contact .icon-socials .fa-facebook { color: #e8a52a; }
+.section-contact .icon-socials .fa-instagram { color: #e8572a; }
+
+/* Text Spacing Elements */
 .section-contact .info-label {
-  font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1.5px; 
-  text-transform: uppercase;
-  color: var(--light-text);
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--light-text);
 }
 
 .section-contact .info-value {
-  font-family: var(--font-body);
-  font-size: 13.5px;
-  font-weight: 500;
-  letter-spacing: -0.2px;
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    font-weight: 500;
 }
 
-.section-contact .socials-icon a {
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  display: inline-block;
+/* Custom Overrides para sa Say Hello Button */
+.section-contact .btn-contact-cta {
+    font-family: var(--font-body);
+    background-color: var(--dark, #1a1a1a);
+    color: #ffffff;
+    font-size: 0.85rem;
+    border: 1px solid var(--dark, #1a1a1a);
+    transition: all 0.3s ease;
 }
 
-.section-contact .socials-icon a:hover {
-  transform: scale(1.15);
-  opacity: 0.8;
+/* Lime Hover state para sa Button */
+.section-contact .btn-contact-cta:hover {
+    background-color: #c7de5c !important;
+    border-color: #c7de5c !important;
+    color: var(--dark, #1a1a1a) !important; /* Dark text para malinaw basahin sa lime background */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(199, 222, 92, 0.35);
 }
 
-.section-contact .btn-dark {
-  font-family: var(--font-body);
-  background-color: var(--dark) !important;
-  border: 1px solid var(--dark) !important;
-  font-size: 12px;
-  letter-spacing: 1.2px;
-  transition: all 0.3s ease !important;
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
 }
 
-.section-contact .btn-dark:hover {
-  background-color: transparent !important;
-  color: var(--dark) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important;
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* =========== ANIMATIONS =========== */
