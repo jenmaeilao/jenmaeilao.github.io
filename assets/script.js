@@ -182,6 +182,8 @@ window.addEventListener('scroll', updateNav, { passive: true });
 updateNav();
 
 navLinks.forEach(link => {
+  if (!link.dataset.section) return;
+
   link.addEventListener('click', e => {
     e.preventDefault();
     const target = document.querySelector(link.getAttribute('href'));
