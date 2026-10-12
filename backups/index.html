@@ -6,16 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
 
-    <!-- ========== MORPHING NAVBAR ========== -->
+  <!-- ========== MORPHING NAVBAR ========== -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
     <div class="container-lg navbar-capsule-inner">
       <a class="navbar-brand d-flex align-items-center" href="#home">
@@ -34,12 +36,14 @@
           <li class="nav-item"><a href="#about" class="nav-link" data-section="about">ABOUT</a></li>
           <li class="nav-item"><a href="#portfolio" class="nav-link" data-section="portfolio">PORTFOLIO</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact">CONTACT</a></li>
+          <li class="nav-item"><a href="https://github.com/jenmaeilao/web-development" class="nav-link"
+              target="_blank">WORKS</a></li>
         </ul>
       </div>
 
       <div class="nav-email d-none d-lg-flex flex-column align-items-end">
         <span class="available-label">AVAILABLE FOR PROJECTS</span>
-        <a href="mailto:jenmaeilao@gmail.com" class="email-link">jenmaeilao@gmail.com</a>
+        <a href="mailto:jennmaeilao@gmail.com" class="email-link">jennmaeilao@gmail.com</a>
       </div>
     </div>
   </nav>
@@ -50,16 +54,17 @@
       <div class="row mb-8">
         <h1 class="hero-name">JEN MAE ILAO</h1>
         <div class="home-intro">
+
           <div class="intro-photo">
-            <div class="photo-placeholder">
-              <i class="fa-solid fa-user"></i>
-            </div>
+            <img src="assets/img/jenmaeilao.jpg" alt="Jen Mae Ilao" class="img-fluid" />
           </div>
+
           <div class="intro-body">
             <p class="greeting">Hi, I'm Jen!</p>
-            <p class="intro-desc">Welcome to my personal portfolio. Here, you can explore my projects, skills, and
-              experiments as I continue learning full-stack web development and IT. I enjoy creating simple and
-              functional designs while discovering new ways to solve problems through coding.</p>
+            <p class="intro-desc">Welcome to my personal portfolio. Here, you can explore my projects, experiences, and
+              journey as I continue learning and growing as a BSIT student. I’m currently exploring Software Quality
+              Assurance, Software Testing, and Systems Analysis while building my technical, communication, and
+              problem-solving skills.</p>
             <a href="#" class="btn-primary">View Resume (soon!)</a>
           </div>
         </div>
@@ -90,7 +95,7 @@
             <div class="skill-icon" style="background:#fff8ee"><i class="fa-solid fa-people-group"
                 style="color:#e8a52a"></i></div>
             <p class="skill-name">Collaboration</p>
-            <p class="skill-tags">Team Player</p>
+            <p class="skill-tags">Leadership, Teamwork</p>
           </div>
         </div>
       </div>
@@ -108,14 +113,19 @@
       </div>
       <div class="about-body">
         <h2 class="about-heading">About Me</h2>
-        <p> I’m a 2nd year BSIT student currently exploring web development, software engineering, and UI/UX design. I
-          enjoy learning how systems work both on the frontend and backend, and I’m continuously improving my skills
-          through projects and practice. </p>
-        <p> I’ve worked with HTML, CSS, JavaScript, PHP, MySQL, Python, and C++, and I also have experience with
-          networking concepts using Cisco Packet Tracer. I’m still building my confidence in development, especially in
-          JavaScript, but I’m actively learning and applying what I study. </p>
-        <p> Right now, I’m focused on building real-world projects like travel booking systems and web applications,
-          while also exploring where I want to specialize in the future. </p>
+        <p>Hi! I’m a 3rd Year BSIT student interested in Software Quality Assurance, Software Testing, and Systems
+          Analysis.</p>
+
+        <p>As I continue exploring the field of QA, I’ve developed an interest in finding bugs, improving existing
+          systems, and understanding how users interact with software. I also enjoy documentation, organization, and
+          project coordination, which I believe are important in creating reliable and user-friendly systems.</p>
+
+        <p>Through academic projects and hands-on practice, I’m continuously strengthening my technical and
+          communication skills while exploring different areas such as QA, Systems/Business Analysis, and Project
+          Management.</p>
+
+        <p>My goal is to keep learning, gain more practical experience, and eventually grow into a professional who
+          helps build and deliver high-quality software.</p>
       </div>
     </div>
     </div>
@@ -129,9 +139,15 @@
           <p class="edu-sub">Polytechnic University of the Philippines - Sto. Tomas</p>
         </div>
         <div class="edu-item">
+          <span class="edu-year">2022 – 2024</span>
           <p class="edu-title">Senior High School – STEM</p>
           <p class="edu-sub">Sto. Tomas Senior High School</p>
-          <p class="edu-sub">With High Honors • STEM UP Member</p>
+          <!-- <p class="edu-sub">With High Honors • STEM UP Member</p> -->
+        </div>
+        <div class="edu-item">
+          <span class="edu-year">2018 – 2022</span>
+          <p class="edu-title">Junior High School</p>
+          <p class="edu-sub">Muntinlupa Science High School</p>
         </div>
       </div>
       <div class="about-col">
@@ -152,12 +168,13 @@
     </div>
 
     <div class="achievements">
-      <h3 class="col-heading orange">ACHIEVEMENTS &amp; CERTIFICATIONS</h3>
+      <h3 class="col-heading orange">ACHIEVEMENTS & CERTIFICATIONS</h3>
       <div class="ach-grid">
 
         <div class="ach-card">
-          <p class="ach-title">Currently Building My Portfolio</p>
-          <p class="ach-sub">No certifications yet — actively learning and working on projects</p>
+          <p class="ach-title">Getting Started with Cisco Packet Tracer</p>
+          <p class="ach-sub">Completed certification focusing on basic network simulation, IP configuration, and network
+            troubleshooting fundamentals.</p>
         </div>
 
         <div class="ach-card">
@@ -174,7 +191,7 @@
     <div class="portfolio-header">
       <h2 class="portfolio-title">Selected Works</h2>
       <p class="portfolio-desc">
-        A collection of projects I’ve built and am currently developing as a BSIT student exploring web development,
+        A collection of projects I've built and am currently developing as a BSIT student exploring web development,
         systems, and software fundamentals.
       </p>
     </div>
@@ -182,54 +199,70 @@
     <div class="works-grid">
 
       <!-- LakbayLokal -->
-      <div class="work-card">
+      <div class="work-card" onclick="openModal('lakbaylokal')">
         <div class="work-badge web-design">Web App</div>
-        <div class="work-thumb"></div>
+        <div class="work-thumb">
+          <div class="click-hint"><span><i class="fa-solid fa-expand"></i> View Project</span></div>
+          <img src="assets/img/lakbaylokal/lakbaylokal.png" alt="LakbayLokal Preview"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="work-thumb-placeholder" style="display:none;">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>LAKBAYLOKAL</span>
+          </div>
+        </div>
         <div class="work-info">
           <p class="work-title">LakbayLokal</p>
-          <p class="work-desc">
-            A travel booking system that combines hotel reservations with personalized itinerary planning for users.
-          </p>
+          <p class="work-desc">A travel booking system that combines hotel reservations with personalized itinerary
+            planning for users.</p>
           <div class="work-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">PHP/MySQL</span>
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <span class="tag">JavaScript</span><span class="tag">PHP/MySQL</span>
           </div>
         </div>
       </div>
 
-      <!-- Byahe -->
-      <div class="work-card">
+      <!-- Tagpo -->
+      <div class="work-card" onclick="openModal('tagpo')">
         <div class="work-badge web-design">Web App</div>
-        <div class="work-thumb"></div>
+        <div class="work-thumb">
+          <div class="click-hint"><span><i class="fa-solid fa-expand"></i> View Project</span></div>
+          <img src="assets/img/tagpo/tagpo.png" alt="Tagpo Preview"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="work-thumb-placeholder" style="display:none;">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>TAGPO</span>
+          </div>
+        </div>
         <div class="work-info">
           <p class="work-title">Tagpo</p>
-          <p class="work-desc">
-            A website for renting places for specific events, allowing users to browse and book venues easily.
-          </p>
+          <p class="work-desc">A website for renting places for specific events, allowing users to browse and book
+            venues easily.</p>
           <div class="work-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">PHP/MySQL</span>
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <span class="tag">JavaScript</span><span class="tag">PHP/MySQL</span>
           </div>
         </div>
       </div>
 
-      <!-- Yawnzzn Fashion -->
-      <div class="work-card">
+      <!-- Yawnzzn -->
+      <div class="work-card" onclick="openModal('yawnzzn')">
         <div class="work-badge python">Web + Python</div>
-        <div class="work-thumb"></div>
+        <div class="work-thumb">
+          <div class="click-hint"><span><i class="fa-solid fa-expand"></i> View Project</span></div>
+          <img src="assets/img/yawnzzn/yawnzzn.png" alt="Yawnzzn Preview"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="work-thumb-placeholder" style="display:none;">
+            <i class="fa-solid fa-shirt"></i>
+            <span>YAWNZZN</span>
+          </div>
+        </div>
         <div class="work-info">
-          <p class="work-title">Yawnzzn Fashion Website</p>
-          <p class="work-desc">
-            A fashion-themed website with Python integration, focused on combining design and backend functionality.
-          </p>
+          <p class="work-title">Yawnzzn</p>
+          <p class="work-desc">A fashion-themed website with Python integration, focused on combining design and backend
+            functionality.</p>
           <div class="work-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">Python</span>
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <span class="tag">Python</span><span class="tag">SQLite3</span>
           </div>
         </div>
       </div>
@@ -237,73 +270,110 @@
     </div>
 
     <div class="portfolio-cta">
-      <a href="https://github.com/JENMAEILAO" class="btn-primary">
-        View More on GitHub
-      </a>
+      <a href="https://github.com/jenmaeilao" class="btn-primary">View More on GitHub</a>
     </div>
   </section>
 
-  <!-- ========== CONTACT ========== -->
-  <section id="contact" class="section section-contact">
-    <div class="contact-header">
-      <h2 class="contact-title">Let’s Work Together</h2>
-      <p class="contact-desc">
-        I’m currently a BSIT student exploring web development, UI/UX, and software engineering. I’m open to
-        collaborations, projects, internships, and learning opportunities where I can grow and contribute.
-      </p>
-    </div>
-    <div class="contact-info">
-      <div class="info-card">
-        <div class="info-icon" style="background:#fff3ee"><i class="fa-solid fa-envelope" style="color:#e8572a"></i>
-        </div>
-        <p class="info-label">Email</p>
-        <p class="info-value">jenmaeilao@gmail.com</p>
-      </div>
-      <div class="info-card">
-        <div class="info-icon" style="background:#f0fff4"><i class="fa-solid fa-location-dot" style="color:#2e9e5b"></i>
-        </div>
-        <p class="info-label">Location</p>
-        <p class="info-value">Batangas, Philippines</p>
-      </div>
-      <div class="info-card">
-        <div class="info-icon socials-icon">
-          <i class="fa-brands fa-facebook" style="color:#e8a52a"></i>
-          <i class="fa-brands fa-instagram" style="color:#e8572a"></i>
-        </div>
-        <p class="info-label">Follow Me</p>
-        <p class="info-value">Let's connect</p>
-      </div>
-    </div>
+  <section id="contact" class="section section-contact py-5">
+    <div class="container-lg">
 
-    <form class="contact-form" id="contactForm">
-      <h3 class="form-heading">Send Me a Message</h3>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Your Name *</label>
-          <input type="text" placeholder="Jen Mae Ilao" required />
+      <div class="contact-header text-center mb-5">
+        <h2 class="contact-title display-5 fw-bold mb-3">Let’s Work Together</h2>
+        <p class="contact-desc text-muted mx-auto col-lg-8">
+          I’m currently a BSIT student exploring web development, UI/UX, and software engineering. I’m open to
+          collaborations, projects, internships, and learning opportunities where I can grow and contribute.
+        </p>
+      </div>
+
+      <div class="row g-4 contact-info text-center justify-content-center">
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <a href="mailto:jennmaeilao@gmail.com" class="contact-card-link">
+            <div class="info-card card h-100 p-4 border-0 rounded-3">
+              <div class="info-icon icon-email rounded-circle mb-3 mx-auto">
+                <i class="fa-solid fa-envelope fs-4"></i>
+              </div>
+              <p class="info-label fw-bold mb-1">Email</p>
+              <p class="info-value text-muted small mb-0 text-truncate w-100">jennmaeilao@gmail.com</p>
+            </div>
+          </a>
         </div>
-        <div class="form-group">
-          <label>Your Email *</label>
-          <input type="email" placeholder="jenmaeilao@gmail.com" required />
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="info-card card h-100 p-4 border-0 rounded-3">
+            <div class="info-icon icon-location rounded-circle mb-3 mx-auto">
+              <i class="fa-solid fa-location-dot fs-4"></i>
+            </div>
+            <p class="info-label fw-bold mb-1">Location</p>
+            <p class="info-value text-muted small mb-0">Batangas, Philippines</p>
+          </div>
         </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="info-card card h-100 p-4 border-0 rounded-3">
+            <div
+              class="info-icon icon-socials d-inline-flex align-items-center justify-content-center gap-3 mb-3 mx-auto">
+              <a href="https://www.facebook.com/jukyumz" target="_blank"><i class="fa-brands fa-facebook fs-4"></i></a>
+              <a href="https://www.instagram.com/yawnzjei" target="_blank"><i
+                  class="fa-brands fa-instagram fs-4"></i></a>
+            </div>
+            <p class="info-label fw-bold mb-1">Follow Me</p>
+            <p class="info-value text-muted small mb-0">Let's connect</p>
+          </div>
+        </div>
+
       </div>
-      <div class="form-group">
-        <label>Subject *</label>
-        <input type="text" placeholder="Project Inquiry" />
+
+      <div class="text-center mt-5">
+        <a href="mailto:jennmaeilao@gmail.com"
+          class="btn btn-contact-cta rounded-pill px-5 py-3 fw-semibold text-uppercase tracking-wider">
+          <i class="fa-solid fa-paper-plane me-2"></i> Say Hello via Email
+        </a>
       </div>
-      <div class="form-group">
-        <label>Message *</label>
-        <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
-      </div>
-      <button type="submit" class="btn-send">
-        <i class="fa-solid fa-paper-plane"></i> Send Message
+
+    </div>
+  </section>
+
+  <!-- ========== PROJECT MODAL ========== -->
+  <div class="proj-modal-overlay" id="projectModal" onclick="handleOverlayClick(event)">
+    <div class="proj-modal" id="projectModalBox">
+
+      <button class="modal-close-btn" onclick="closeModal()">
+        <i class="fa-solid fa-xmark"></i>
       </button>
-      <p class="form-success" id="formSuccess">Message sent! I'll get back to you soon.</p>
-    </form>
-  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  <script src="assets/script.js"></script>
+      <!-- Slideshow gallery -->
+      <div class="modal-gallery" id="modalGallery">
+        <!-- slides injected by JS -->
+        <button class="gallery-nav gallery-prev" onclick="slideGallery(-1)">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="gallery-nav gallery-next" onclick="slideGallery(1)">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="gallery-dots" id="galleryDots"></div>
+      </div>
+
+      <!-- Text content -->
+      <div class="modal-body-content">
+        <span class="modal-project-badge" id="modalBadge"></span>
+        <h2 class="modal-project-title" id="modalTitle"></h2>
+        <p class="modal-project-desc" id="modalDesc"></p>
+        <div class="modal-features">
+          <h4>Key Features</h4>
+          <ul class="feature-list" id="modalFeatures"></ul>
+        </div>
+        <div class="modal-tags" id="modalTags"></div>
+        <div class="modal-links" id="modalLinks"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 
 </html>
