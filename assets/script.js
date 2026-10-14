@@ -158,10 +158,11 @@ const breadcrumb = document.getElementById('nav-breadcrumb');
 const navbar = document.getElementById('navbar');
 
 const sectionMeta = {
-  home: { num: '01', label: 'HOME' },
-  about: { num: '02', label: 'ABOUT' },
+  home:      { num: '01', label: 'HOME' },
+  about:     { num: '02', label: 'ABOUT' },
   portfolio: { num: '03', label: 'PORTFOLIO' },
-  contact: { num: '04', label: 'CONTACT' },
+  works:     { num: '04', label: 'WORKS' },
+  contact:   { num: '05', label: 'CONTACT' },
 };
 
 function updateNav() {

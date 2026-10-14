@@ -12,7 +12,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="icon" type="image/png" href="assets/img/logo.svg">
 </head>
@@ -37,7 +38,7 @@
           <li class="nav-item"><a href="#home" class="nav-link active" data-section="home">HOME</a></li>
           <li class="nav-item"><a href="#about" class="nav-link" data-section="about">ABOUT</a></li>
           <li class="nav-item"><a href="#portfolio" class="nav-link" data-section="portfolio">PORTFOLIO</a></li>
-          <li class="nav-item"><a href="https://github.com/jenmaeilao/web-development" class="nav-link">WORKS</a></li>
+          <li class="nav-item"><a href="#works" class="nav-link" data-section="works">WORKS</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact">CONTACT</a></li>
         </ul>
       </div>
@@ -54,53 +55,94 @@
     <div class="container-lg">
       <div class="row mb-8">
         <h1 class="hero-name">JEN MAE ILAO</h1>
-        <div class="home-intro">
+        <div class="home-folder">
+          <div class="hf-folder">
 
-          <div class="intro-photo">
-            <img src="assets/img/jenmaeilao.jpg" alt="Jen Mae Ilao" class="img-fluid" />
+            <div class="hf-meta">
+              <span>01 · Home</span>
+              <span>BSIT · 3rd Year<br>Jen Mae Ilao</span>
+            </div>
+
+            <!-- collage -->
+            <div class="hf-collage">
+              <div class="hf-check">
+                <span class="hf-script">Skills</span>
+                <ul>
+                  <li>Software QA</li>
+                  <li>Testing</li>
+                  <li>Systems Analysis</li>
+                  <li>Web Dev</li>
+                </ul>
+                <small>TOTAL ✦ 4</small>
+              </div>
+
+              <div class="intro-photo hf-photo">
+                <img src="assets/img/jenmaeilao.jpg" alt="Jen Mae Ilao" class="img-fluid" />
+              </div>
+
+              <div class="hf-ticket">
+                <span class="hf-script">Ticket</span>
+                <div class="hf-tk-box"><b>title:</b><br>Bug found!</div>
+                <div class="hf-rating">★★★★★</div>
+                <div class="hf-barcode"></div>
+              </div>
+
+              <div class="hf-tag">OPEN FOR<br><b>PROJECTS</b></div>
+              <span class="hf-star s1"></span>
+              <span class="hf-star s2"></span>
+              <span class="hf-flower">✿</span>
+            </div>
+
+            <!-- paper sheet -->
+            <div class="hf-paper">
+              <div class="intro-body hf-paper-inner">
+                <p class="greeting">Hi, I'm Jen!</p>
+                <p class="intro-desc">Welcome to my personal portfolio. Here, you can explore my projects, experiences,
+                  and
+                  journey as I continue learning and growing as a <mark class="hf-mark">BSIT student</mark>. I'm
+                  currently
+                  exploring Software Quality Assurance, Software Testing, and Systems Analysis while building my
+                  technical,
+                  communication, and problem-solving skills.</p>
+                <a href="#" class="btn-primary">View Resume (soon!)</a>
+              </div>
+              <i class="fa-solid fa-heart hf-heart"></i>
+            </div>
+
           </div>
+        </div>
 
-          <div class="intro-body">
-            <p class="greeting">Hi, I'm Jen!</p>
-            <p class="intro-desc">Welcome to my personal portfolio. Here, you can explore my projects, experiences, and
-              journey as I continue learning and growing as a BSIT student. I’m currently exploring Software Quality
-              Assurance, Software Testing, and Systems Analysis while building my technical, communication, and
-              problem-solving skills.</p>
-            <a href="#" class="btn-primary">View Resume (soon!)</a>
+        <div class="skills-section">
+          <h2 class="section-label">SKILLS &amp; EXPERTISE</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#fff3ee"><i class="fa-solid fa-code" style="color:#e8572a"></i>
+              </div>
+              <p class="skill-name">Development</p>
+              <p class="skill-tags">HTML, CSS, JS, Python, C++</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#eef6ff"><i class="fa-solid fa-pen-nib"
+                  style="color:#2a7ae8"></i>
+              </div>
+              <p class="skill-name">UI/UX Design</p>
+              <p class="skill-tags">Figma, Canva, Blender</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#f0fff4"><i class="fa-solid fa-network-wired"
+                  style="color:#2e9e5b"></i></div>
+              <p class="skill-name">Networking</p>
+              <p class="skill-tags">Troubleshoot, Configure, Setup</p>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#fff8ee"><i class="fa-solid fa-people-group"
+                  style="color:#e8a52a"></i></div>
+              <p class="skill-name">Collaboration</p>
+              <p class="skill-tags">Leadership, Teamwork</p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="skills-section">
-        <h2 class="section-label">SKILLS &amp; EXPERTISE</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-icon" style="background:#fff3ee"><i class="fa-solid fa-code" style="color:#e8572a"></i>
-            </div>
-            <p class="skill-name">Development</p>
-            <p class="skill-tags">HTML, CSS, JS, Python, C++</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon" style="background:#eef6ff"><i class="fa-solid fa-pen-nib" style="color:#2a7ae8"></i>
-            </div>
-            <p class="skill-name">UI/UX Design</p>
-            <p class="skill-tags">Figma, Canva, Blender</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon" style="background:#f0fff4"><i class="fa-solid fa-network-wired"
-                style="color:#2e9e5b"></i></div>
-            <p class="skill-name">Networking</p>
-            <p class="skill-tags">Troubleshoot, Configure, Setup</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon" style="background:#fff8ee"><i class="fa-solid fa-people-group"
-                style="color:#e8a52a"></i></div>
-            <p class="skill-name">Collaboration</p>
-            <p class="skill-tags">Leadership, Teamwork</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- ========== ABOUT ========== -->
@@ -277,13 +319,14 @@
 
   <!-- ========== WORKS ========== -->
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet" />
-  <section id="works" class="section-works">
+  <section id="works" class="section section-works">
     <div class="works-backdrop">
       <div class="works-folder">
 
         <header class="works-head">
           <div>
-            <h2 class="works-title"><span class="wt-small">My</span> <span class="wt-big"><span class="wt-cap">W</span>orks</span></h2>
+            <h2 class="works-title"><span class="wt-small">My</span> <span class="wt-big"><span
+                  class="wt-cap">W</span>orks</span></h2>
             <p class="works-sub">(assigned by the professor)</p>
           </div>
           <p class="works-tagline">-projects i built for class-</p>
@@ -296,36 +339,46 @@
             <div class="wk-cover">
               <img src="assets/img/project-01.jpg" alt="Project 01 preview"
                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="wk-ph" style="display:none;"><i class="fa-solid fa-laptop-code"></i><span>PROJECT 01</span></div>
+              <div class="wk-ph" style="display:none;"><i class="fa-solid fa-laptop-code"></i><span>PROJECT 01</span>
+              </div>
             </div>
             <h3 class="wk-title">Project 01 Bento Layout</h3>
             <p class="wk-meta">(2026) &middot; HTML & CSS</p>
             <div class="wk-actions">
-              <a class="wk-btn wk-demo" href="https://jenmaeilao.github.io/web-development/activity-01-bento" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live View</a>
-              <a class="wk-btn wk-git" href="https://github.com/jenmaeilao/web-development" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a class="wk-btn wk-demo" href="https://jenmaeilao.github.io/web-development/activity-01-bento"
+                target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live View</a>
+              <a class="wk-btn wk-git" href="https://github.com/jenmaeilao/web-development" target="_blank"
+                rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
           </article>
 
           <!-- Placeholders: copy the card above over one of these when the next project is assigned -->
           <article class="wk-card is-empty">
-            <div class="wk-cover"><div class="wk-ph"><i class="fa-solid fa-lock"></i><span>PROJECT 02</span></div></div>
+            <div class="wk-cover">
+              <div class="wk-ph"><i class="fa-solid fa-lock"></i><span>PROJECT 02</span></div>
+            </div>
             <h3 class="wk-title">Coming soon</h3>
             <p class="wk-meta">(2026)</p>
           </article>
           <article class="wk-card is-empty">
-            <div class="wk-cover"><div class="wk-ph"><i class="fa-solid fa-lock"></i><span>PROJECT 03</span></div></div>
+            <div class="wk-cover">
+              <div class="wk-ph"><i class="fa-solid fa-lock"></i><span>PROJECT 03</span></div>
+            </div>
             <h3 class="wk-title">Coming soon</h3>
             <p class="wk-meta">(2026)</p>
           </article>
           <article class="wk-card is-empty">
-            <div class="wk-cover"><div class="wk-ph"><i class="fa-solid fa-lock"></i><span>PROJECT 04</span></div></div>
+            <div class="wk-cover">
+              <div class="wk-ph"><i class="fa-solid fa-lock"></i><span>PROJECT 04</span></div>
+            </div>
             <h3 class="wk-title">Coming soon</h3>
             <p class="wk-meta">(2026)</p>
           </article>
 
           <aside class="wk-note">
             <span class="wk-pin"></span>
-            <p>these are the projects my professor assigned us. more will be added as the semester goes on. <span class="wk-spark">&#10022;</span></p>
+            <p>these are the projects my professor assigned us. more will be added as the semester goes on. <span
+                class="wk-spark">&#10022;</span></p>
           </aside>
         </div>
 
