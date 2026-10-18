@@ -821,7 +821,6 @@ h1, h2, h3 { font-weight: 400; }
 .hf-paper-inner { max-width: 640px; margin: 0 auto; padding-top: 0 !important; }
 .hf-paper .intro-desc { max-width: none; }
 .hf-mark { background: linear-gradient(transparent 55%, rgba(231,154,168,.7) 55%); color: inherit; padding: 0 2px; }
-.hf-heart { position: absolute; right: 44px; bottom: 22px; font-size: 70px; color: #c0213f; opacity: .9; transform: rotate(-8deg); }
 
 .home-folder .hf-photo::before {
   top: -16px; width: 90px; height: 26px; margin-left: -45px;
@@ -833,7 +832,6 @@ h1, h2, h3 { font-weight: 400; }
   .hf-collage { position: relative; left: 50%; margin: 0 0 -176px -320px; transform: scale(.6); transform-origin: top center; }
   .hf-paper { margin: -30px -6px 0; padding: 64px 22px 70px; }
   .hf-paper::after { display: none; }
-  .hf-heart { font-size: 42px; right: 18px; bottom: 16px; }
 }
 @media (max-width: 420px) {
   .hf-collage { transform: scale(.5); margin-bottom: -225px; }
@@ -895,10 +893,40 @@ h1, h2, h3 { font-weight: 400; }
 .works-grid .work-card .tag { background: rgba(255,255,255,.6); }
 .works-grid .work-card:hover .tag { background: var(--wine); color: var(--cream); }
 
+/* ---- Mobile: stacked folders, no overlap between tab and polaroid ---- */
 @media (max-width: 760px) {
+  .portfolio-title { font-size: 40px; }
+  .works-grid { padding-top: 44px; margin-bottom: 40px; }
+
   .works-grid .work-card,
-  .works-grid .work-card:nth-child(even) { grid-template-columns: 1fr; row-gap: 18px; padding: 30px 24px 80px; }
+  .works-grid .work-card:nth-child(even) {
+    grid-template-columns: minmax(0, 1fr); row-gap: 18px;
+    padding: 40px 22px 92px; border-radius: 0 20px 0 0;
+  }
+  .works-grid .work-card:nth-child(even) { border-radius: 20px 0 0 0; }
   .works-grid .work-card:last-child { padding-bottom: 32px; }
-  .works-grid .work-card:nth-child(n) .work-thumb { order: 0; width: 100%; max-width: 300px; justify-self: center; margin-top: -74px; }
-  .works-grid .work-card:nth-child(n)::after { left: calc(50% - 18px); right: auto; }
+
+  /* tab stays on its own row above the polaroid */
+  .works-grid .work-card .work-badge { padding: 0 24px; height: 34px; top: -33px; font-size: 10.5px; letter-spacing: 1.5px; }
+
+  /* polaroid sits inside the folder instead of being pulled up over the tab */
+  .works-grid .work-card:nth-child(n) .work-thumb {
+    order: 0; width: 100%; max-width: 300px; justify-self: center;
+    height: auto; aspect-ratio: 4 / 3; margin-top: 0;
+  }
+  /* paper clip pinned to the top edge of the polaroid */
+  .works-grid .work-card:nth-child(n)::after { top: 22px; left: calc(50% - 18px); right: auto; font-size: 30px; }
+
+  .works-grid .work-info { min-width: 0; }
+  .works-grid .work-title { font-size: 26px; }
+  .works-grid .work-desc { max-width: none; }
+}
+
+@media (max-width: 420px) {
+  .works-grid .work-card,
+  .works-grid .work-card:nth-child(even) { padding: 38px 16px 88px; }
+  .works-grid .work-card:last-child { padding-bottom: 28px; }
+  .works-grid .work-card .work-badge { padding: 0 18px; font-size: 10px; letter-spacing: 1px; }
+  .works-grid .work-title { font-size: 23px; }
+  .portfolio-title { font-size: 34px; }
 }
