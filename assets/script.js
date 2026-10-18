@@ -56,6 +56,42 @@ const projects = {
     github: 'https://github.com/jenmaeilao/yawnzzn',
     demo: null,
   },
+  project01: {
+    title: 'Project 01 – Bento Layout',
+    badge: 'HTML & CSS',
+    badgeClass: 'web-design',
+    desc: 'A class activity where I recreated a bento-style layout — a clean grid of different-sized boxes — using only HTML and CSS. It was my practice in CSS Grid, spacing, and keeping a layout balanced and responsive.',
+    features: [
+      'Bento-style grid built with CSS Grid',
+      'Boxes of different sizes arranged into one balanced layout',
+      'Consistent spacing, colors, and rounded corners',
+      'Responsive layout that adjusts on smaller screens',
+    ],
+    images: ['assets/img/project-01.jpg'],
+    placeholderLabels: ['Bento Layout'],
+    placeholderIcon: 'fa-laptop-code',
+    tags: ['HTML', 'CSS'],
+    github: 'https://github.com/jenmaeilao/web-development',
+    demo: 'https://jenmaeilao.github.io/web-development/activity-01-bento',
+  },
+  project02: {
+    title: 'Project 02 – JSON',
+    badge: 'HTML, CSS & JS',
+    badgeClass: 'web-design',
+    desc: 'A class activity about working with JSON data. The page reads data from a JSON structure with JavaScript and displays it dynamically on the page, styled with HTML and CSS.',
+    features: [
+      'Data stored in a JSON structure',
+      'JavaScript reads the data and renders it on the page',
+      'Content generated dynamically instead of hard-coded in HTML',
+      'Styled and organized with CSS',
+    ],
+    images: ['assets/img/project-02.jpg'],
+    placeholderLabels: ['JSON Activity'],
+    placeholderIcon: 'fa-laptop-code',
+    tags: ['HTML', 'CSS', 'JavaScript', 'JSON'],
+    github: 'https://github.com/jenmaeilao/web-development',
+    demo: 'https://jenmaeilao.github.io/web-development/activity-02-json',
+  },
 };
 
 // Modal Logic
@@ -101,6 +137,15 @@ function openModal(id) {
 
     if (src) {
       slide.innerHTML = `<img src="${src}" alt="${p.title} screenshot ${i + 1}">`;
+      // if the image file is missing, show the placeholder instead of a broken image
+      slide.querySelector('img').onerror = () => {
+        slide.innerHTML = `
+            <div class="gallery-placeholder">
+              <i class="fa-solid ${p.placeholderIcon}"></i>
+              <div class="slide-num">0${i + 1}</div>
+              <p>${p.placeholderLabels[i] || 'Screenshot ' + (i + 1)}</p>
+            </div>`;
+      };
     } else {
       slide.innerHTML = `
             <div class="gallery-placeholder">
@@ -119,6 +164,11 @@ function openModal(id) {
   ).join('');
 
   currentSlide = 0;
+
+  // Hide arrows + dots when there's only one image
+  const single = totalSlides <= 1;
+  gallery.querySelectorAll('.gallery-nav').forEach(b => b.style.display = single ? 'none' : '');
+  dots.style.display = single ? 'none' : '';
 
   // Show modal
   document.getElementById('projectModal').classList.add('open');

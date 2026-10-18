@@ -305,7 +305,7 @@ body { font-family: var(--font-body); color: var(--text); background: var(--bg);
   opacity: 0; transition: opacity .4s ease;
 }
 .gallery-slide.active { opacity: 1; }
-.gallery-slide img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-slide img { width: 100%; height: 100%; object-fit: contain; }
 .gallery-placeholder {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 12px; width: 100%; height: 100%;
@@ -930,3 +930,16 @@ h1, h2, h3 { font-weight: 400; }
   .works-grid .work-title { font-size: 23px; }
   .portfolio-title { font-size: 34px; }
 }
+
+/* ---------- Works: click to open project popup ---------- */
+.wk-card:not(.is-empty) .wk-cover { cursor: pointer; }
+.wk-hint {
+  position: absolute; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center;
+  background: rgba(74,17,36,0.35); opacity: 0; transition: opacity .3s ease; pointer-events: none;
+}
+.wk-card:hover .wk-hint { opacity: 1; }
+.wk-hint span {
+  background: var(--wk-cream); color: var(--wk-wine); font-size: 11px; font-weight: 700; letter-spacing: .5px;
+  padding: 7px 14px; border-radius: 999px; transform: translateY(8px); transition: transform .3s ease;
+}
+.wk-card:hover .wk-hint span { transform: translateY(0); }
